@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Network Registration</h1>
+<p>Join Our BrotherHood</p>
+<img src="https://img.freepik.com/premium-vector/brotherhood-logo-vintage-style-monochrome-color-with-outline_527939-72.jpg?w=360" height="150"/>
+<form action="https://formsubmit.co/2eb94b5fcc59ca32ab5ab7335a561761" method="POST">
+    <!-- Honeypot -->  
+    <input type="text" name="_honey" style="display: none;">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    <fieldset>
+      <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+      <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+      <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+    </fieldset>
+    <fieldset>
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+      <label for="school-account"><input id="school-account" type="radio" name="account-type" class="inline" /> School Account</label>
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href=https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="profile-picture">Upload a goals picture (min 3): <input id="profile-picture" type="file" name="file" /></label>
+      <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+      <label for="referrer">How did you hear about us?
+        <select id="referrer" name="referrer">
+          <option value="">(select one)</option>
+          <option value="1">David</option>
+          <option value="2">Joshua</option>
+          <option value="3">Ayomide</option>
+          <option value="4">Kachi</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+      <label for="bio">Provide a bio:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Why you joined, What your purpose is, What do you expect from this network,etc..."></textarea>
+      </label>
+    </fieldset>
+   <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
